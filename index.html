@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encripta un mensaje</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Averia+Serif+Libre&display=swapfamily=Averia+Serif+Libre&family=La+Belle+Aurore:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>DESCIFRAR UN MENSAJE</h1>
+    <h2>A través de este programa puedes compartir mensajes ocultos a tus amigos para que ellos lo puedan descifrar, ¡Y muchas posibilidades más!</h2>
+    <select name="opt2" id="option2">
+        <option value="en">Cifrado César</option>
+        <option value="de">Cifrado BASE64</option>
+    </select> 
+    <div></div>
+    <input class="contra" type="text" name="contra" id="contra" cols="50" rows="10" required="required" placeholder="Contraseña"></input>
+    <input class="desplazamiento" type="number" id="desplazamiento" size="4"/>
+    <textarea class="textarea1" name="text" id="mensaje" placeholder="¿Que mensaje quieres codificar o decodificar?"></textarea>
+    <div></div>
+    
+    <button class="cifrar" type="submit" id="cifrar" onclick="encriptar()">Cifrar</button>
+    <button class="descifrar" type="submit" id="descifrar" onclick="desencriptar()">Descifrar</button>
+    <p id="resultado">hola</p>
+    
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script2.js"></script>
+    
+</body>
+</html>
